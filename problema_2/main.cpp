@@ -53,7 +53,7 @@ vector<vector<long long>> generarTrianguloPascal(int n) {
 void mostrarPolinomioTriangulo(const vector<vector<long long>>& triangulo, int n) {
     if (triangulo.empty()) return;
 
-    cout << "\na) Coeficientes y Polinomio Resultante (Triángulo de Pascal):" << endl;
+    cout << "\na) Coeficientes y Polinomio Resultante (Triangulo de Pascal):" << endl;
 
     for (int grado = 0; grado <= n; ++grado) {
         const vector<long long>& coef = triangulo[grado];
@@ -94,7 +94,7 @@ void mostrarPolinomioTriangulo(const vector<vector<long long>>& triangulo, int n
 void evaluarPolinomioPasos(const vector<long long>& coef, int n, double x) {
     if (coef.empty()) return;
 
-    cout << "\nb) Cálculo por pasos para f(" << x << ") = (x+1)^" << n << ":" << endl;
+    cout << "\nb) Calculo por pasos para f(" << x << ") = (x+1)^" << n << ":" << endl;
     
 
     cout.setf(ios::fixed);
@@ -120,12 +120,11 @@ void evaluarPolinomioPasos(const vector<long long>& coef, int n, double x) {
     }
     cout << endl;
 
-    cout << "   Suma de términos = " << valor_polinomio << endl;
+    cout << "   Suma de terminos = " << valor_polinomio << endl;
 
     double verificacion = pow(x + 1, n);
-    cout << "   Verificación (x+1)^n = (" << x << "+1)^" << n << " = " << verificacion << endl;
+    cout << "   Verificacion (x+1)^n = (" << x << "+1)^" << n << " = " << verificacion << endl;
 
-    cout << "\n   [Nota: El método óptimo para evaluar un polinomio es el Algoritmo de Horner.]" << endl;
 }
 
 int main() {
