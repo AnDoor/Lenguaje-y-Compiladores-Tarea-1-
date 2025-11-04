@@ -55,10 +55,6 @@ Ejemplos (válidos / inválidos)
 ```
 rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
 ```
-- Inválida (demasiadas reinas blancas — rechazado por el validador actual):
-```
-rnbqkbnr/pppppppp/8/8/8/8/QQQQQQQQ/RNBQKBNR w KQkq - 0 1
-```
 - Inválida (activo no válido):
 ```
 ... wronfield ... x KQkq - 0 1
