@@ -4,7 +4,6 @@ Descripción
 -----------
 Programa en C que valida cadenas en notación FEN (Forsyth–Edwards Notation).  
 Verifica las seis partes de la FEN: disposición del tablero, color activo, enroque, casilla de en-passant, contador de medio-movimiento y número de movimiento.  
-Además incluye una comprobación sencilla de límites por tipo de pieza (por defecto no permite más de 1 reina por color, 8 peones, 2 caballos, 2 alfiles, 2 torres y 1 rey).
 
 Requisitos / dependencias
 ------------------------
@@ -61,7 +60,7 @@ rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1
 ```
 - Inválida (menos de 6 campos o más de 6 campos): el validador exige exactamente 6 campos separados por espacios.
 
-Notas de diseño y limitaciones importantes
+Notas de compilacion
 -----------------------------------------
 
 - Ya se encuentra creado un Makefile para la compilacion de los archivos del problema, solamente debe escribir en
