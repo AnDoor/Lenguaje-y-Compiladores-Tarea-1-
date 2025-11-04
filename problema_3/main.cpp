@@ -1,3 +1,7 @@
+/*
+ Implemente reconocimiento de cadenas, expresiones notación científica, ip, correo electrónico.
+*/
+
 #include <iostream>
 #include <string>
 #include <regex>
@@ -18,7 +22,7 @@ int main() {
     string test;
 
 
-    std::cout << "--- PRUEBAS DE RECONOCIMIENTO DE CADENAS ---\n\n";
+    cout << "--- PRUEBAS DE RECONOCIMIENTO DE CADENAS ---\n\n";
     cout<<"Introduzca una cadena de texto"<<endl;
     cin>>test;
   
