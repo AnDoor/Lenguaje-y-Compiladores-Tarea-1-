@@ -12,4 +12,5 @@
 ![](https://img.icons8.com/?size=100&id=40670&format=png&color=000000) ![](https://img.icons8.com/?size=100&id=40669&format=png&color=000000)
 
 ## Editores de codigo utilizados
-![](https://img.icons8.com/?size=100&id=121602&format=png&color=000000) ![](https://img.icons8.com/?size=100&id=Z6okEpWSgU8N&format=png&color=000000)
+![](https://img.icons8.com/?size=100&id=121602&format=png&color=000000) 
+![](https://img.icons8.com/?size=100&id=Z6okEpWSgU8N&format=png&color=000000)
