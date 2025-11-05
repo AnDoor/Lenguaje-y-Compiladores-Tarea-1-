@@ -1,6 +1,8 @@
 # Calculo de polinomios con triangulo de pascal
 ### Programa desarrollado en C++ que realiza calculos de polinomio utilizando la division de polinomios y el triangulo de Pascal. Tambien se utiliza una memoria dinamica y se muestra los polinomios como triangulo de pascal como en la imagen.
 
+<img width="387" height="177" alt="Image" src="https://github.com/user-attachments/assets/673fe07c-6c5b-41ad-839d-e58bcdfa962e" />
+
 ## Requisitos / dependencias
  - Un compilador c++ moderno:
   - linux / macos: gcc o clang
