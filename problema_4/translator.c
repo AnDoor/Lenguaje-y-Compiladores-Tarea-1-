@@ -1,17 +1,3 @@
-/* translator_student.c
- *
- * Programa simple (estilo estudiante) que lee todo un archivo C en memoria
- * dinámica y reemplaza hasta 5 palabras reservadas por su equivalente en español.
- *
- * Compilar:
- *   gcc -std=c11 -o translator_student translator_student.c
- *
- * Uso:
- *   ./translator_student archivo.c > archivo_trad.c
- *
- * Nota: código intencionalmente simple, no profesional. Maneja strings,
- * caracteres y comentarios de forma básica para evitar reemplazar dentro de ellos.
- */
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -69,7 +55,7 @@ int main(int argc, char **argv) {
     if (!s) { fprintf(stderr, "Error leyendo entrada\n"); return 1; }
 
     int i = 0;
-    int in_str = 0, in_char = 0, in_slc = 0, in_mlc = 0;
+    int in_str = 0, in_char = 0;
 
     while (s[i]) {
         char c = s[i];
@@ -87,22 +73,10 @@ int main(int argc, char **argv) {
             else if (c == '\'') in_char = 0;
             i++; continue;
         }
-        if (in_slc) {
-            putchar(c);
-            if (c == '\n') in_slc = 0;
-            i++; continue;
-        }
-        if (in_mlc) {
-            putchar(c);
-            if (c == '*' && s[i+1] == '/') { putchar(s[++i]); in_mlc = 0; }
-            i++; continue;
-        }
 
         /* detectar inicios */
         if (c == '"') { in_str = 1; putchar(c); i++; continue; }
         if (c == '\'') { in_char = 1; putchar(c); i++; continue; }
-        if (c == '/' && s[i+1] == '/') { in_slc = 1; putchar(c); putchar(s[++i]); i++; continue; }
-        if (c == '/' && s[i+1] == '*') { in_mlc = 1; putchar(c); putchar(s[++i]); i++; continue; }
 
         /* detectar token (identificador/keyword) */
         if (isalpha((unsigned char)c) || c == '_') {

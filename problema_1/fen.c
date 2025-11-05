@@ -6,7 +6,6 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-/* Tamaño de buffer para la FEN leída */
 #define FEN_BUF_SIZE 1024
 
 /*
@@ -39,6 +38,7 @@ static bool is_piece_letter(char c) {
  *  - Valida el primer campo (colocación): exactamente 8 filas separadas por '/',
  *    y cada fila suma exactamente 8 casillas (las cifras 1..8 cuentan huecos).
  */
+
 static bool is_valid_placement(const char *s) {
     if (s == NULL || *s == '\0') return false;
 
