@@ -31,3 +31,17 @@ no hay librerías externas: solo la librería estándar de c++
 `make run`
 
 `./ejecutable.exe`
+
+# Resultado del programa:
+
+## Salida si se una IPv4
+![Image](https://github.com/user-attachments/assets/f832d82d-ce82-4fef-83fe-64310585c2fc)
+
+## Salida si es un correo electrónico
+![Image](https://github.com/user-attachments/assets/38c56546-57af-42f0-bbb6-0b3a45213d7a)
+
+## Salida si es una expresión científica
+![Image](https://github.com/user-attachments/assets/0f2cf19c-c24a-4563-a941-6d8aa7fab8c1)
+
+## Salida si ninguna de las anteriores cumple
+![Image](https://github.com/user-attachments/assets/9df7fbb1-e700-4de3-ba3a-75e7c5998942)
