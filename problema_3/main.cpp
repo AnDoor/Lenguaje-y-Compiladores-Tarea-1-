@@ -24,7 +24,7 @@ int main() {
 
     cout << "--- PRUEBAS DE RECONOCIMIENTO DE CADENAS ---\n\n";
     cout<<"Introduzca una cadena de texto"<<endl;
-    cin>>test;
+   getline(cin,test);
   
     if (verificar_patron(test, regexCientifica)) {
         cout << "La cadena es una expresion cientifica\n";
