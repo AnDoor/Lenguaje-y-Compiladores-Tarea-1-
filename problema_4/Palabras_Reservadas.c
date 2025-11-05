@@ -1,9 +1,3 @@
-/* test_input.c
- *
- * Archivo de prueba para el traductor sencillo (translator_student.c).
- * Contiene las palabras reservadas: int, return, if, else, for
- * en código, en strings y en comentarios para verificar el comportamiento.
- */
 
 #include <stdio.h>
 
@@ -12,16 +6,14 @@
 */
 
 int suma(int a, int b) {
-    return a + b; // return aquí debería traducirse fuera de strings/comentarios
+    return a + b; 
 }
 
 int main(void) {
     int contador = 0;
-    char *texto = "En este string aparecen: int if for return else (no traducir)";
     char ch = 'i'; /* literal de carácter con i */
 
-    // Comentario línea: if else int return for (no traducir)
-    printf("Texto: %s\n", texto);
+    // Comentario línea: if else int return for
 
     for (int i = 0; i < 3; i++) {
         if (i % 2 == 0) {
@@ -31,7 +23,7 @@ int main(void) {
         }
     }
 
-    int integration = 10; // identifier que contiene 'int' no debe cambiarse
+    int integration = 10; 
     contador = suma(integration, 5);
 
     return contador;

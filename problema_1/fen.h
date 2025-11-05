@@ -9,7 +9,6 @@
  *  - Salida: true si la cadena es un FEN válido según las reglas básicas de FEN (6 campos),
  *            false en caso contrario.
  *
- * Documentación:
  *  La función valida los seis campos de FEN:
  *   1) disposición de piezas (8 filas separadas por '/', cada fila suma 8 casillas)
  *   2) color activo ('w' o 'b')
@@ -22,4 +21,4 @@
  */
 bool is_valid_fen(const char *fen);
 
-#endif /* FEN_H */
+#endif
